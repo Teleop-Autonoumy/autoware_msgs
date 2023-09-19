@@ -15,11 +15,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ObjectClassification.idl"
   "msg/Shape.idl"
   DEPENDENCIES
-    "autoware_auto_geometry_msgs"
     "geometry_msgs"
-    "sensor_msgs"
     "std_msgs"
-    "unique_identifier_msgs"
   ADD_LINTER_TESTS
 )
 
