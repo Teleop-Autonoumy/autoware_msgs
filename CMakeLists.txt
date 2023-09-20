@@ -9,13 +9,8 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/DetectedObject.idl"
-  "msg/DetectedObjectKinematics.idl"
-  "msg/DetectedObjects.idl"
-  "msg/ObjectClassification.idl"
-  "msg/Shape.idl"
+  "msg/ObjectClassification.msg"
   DEPENDENCIES
-    "geometry_msgs"
     "std_msgs"
   ADD_LINTER_TESTS
 )
