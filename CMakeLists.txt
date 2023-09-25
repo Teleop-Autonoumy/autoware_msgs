@@ -11,9 +11,13 @@ ament_auto_find_build_dependencies()
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ObjectClassification.msg"
   "msg/Shape.msg"
+  "msg/TrackedObjectKinematics"
+  "msg/TrackedObject"
+  "msg/TrackedObjects"
   DEPENDENCIES
     "std_msgs"
     "geometry_msgs"
+    "unique_identifier_msgs"
   ADD_LINTER_TESTS
 )
 
